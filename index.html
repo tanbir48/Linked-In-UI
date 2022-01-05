@@ -1,0 +1,707 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style2.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <title>Linkedin UI</title>
+
+    <style>
+      /* Initially, hide the extra text that
+          can be revealed with the button */
+      #moreText {
+
+          /* Display nothing for the element */
+          display: none;
+      }
+  </style>
+  </head>
+  <body>
+    <!-- Header Starts -->
+    <div class="header">
+      <div class="header__left">
+        <span><i class="fab fa-linkedin fa-2x"></i></span>
+        <div class="header__search">
+          <i class="fas fa-search"></i>
+          <input type="text" placeholder="search" />
+        </div>
+      </div>
+
+      <div class="header__right">
+        <div class="headerOption">
+          <i class="fas fa-home"></i>
+          <h3>Home</h3>
+        </div>
+        <div class="headerOption">
+          <i class="fas fa-user-friends"></i>
+          <h3>My Network</h3>
+        </div>
+        <div class="headerOption">
+          <i class="fas fa-briefcase"></i>
+          <h3>Jobs</h3>
+        </div>
+        <div class="headerOption">
+          <i class="fas fa-comment-dots"></i>
+          <h3>Messaging</h3>
+        </div>
+        <div class="headerOption">
+          <i class="fas fa-bell"></i>
+          <h3>Notifications</h3>
+        </div>
+        <div class="headerOption">
+          <img src="img/Tanbir.jpg" alt=""/>
+          <ul>
+            <li><h3>Me</h3></li>
+
+            <a onclick="profileNav()" href="#" class="profile-down"><li><i class="fas fa-sort-down"></i></li></a> 
+          </ul>
+          <div class="profile-dropfown" id="profile-nav">
+            <div class="profile-option">
+              <div class="drop-down-pad">
+                <div class="profile-nav">
+                  <div class="nav-profile-img">
+                    <img src="img/Tanbir.jpg" />
+                  </div>
+                  <div class="nav-profile-name">
+                    <h3>Tanbir Hasan Mohan</h3>
+                    <span>Front End Developer</span>
+                  </div>
+                </div>
+                <button>View Profile</button>
+              </div>
+            </div>
+
+            <div class="profile-option">
+              <div class="drop-down-hyperlink">
+                <p>Account</p>
+                <a href="#">Settings & Privacy</a>
+                <a href="#">Help</a>
+                <a href="#">Language</a>
+              </div>
+            </div>
+            <div class="profile-option">
+              <div class="drop-down-hyperlink">
+                <p>Manage</p>
+                <a href="#">Posts & Activity</a>
+                <a href="#">Job Posting Account</a>
+              </div>
+            </div>
+            <div class="profile-option-bottom">
+              <div class="drop-down-hyperlink">
+                <a href="#">Signout</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="headerOption">
+          <i class="fas fa-th"></i>
+          <ul>
+            <li><h3>Work</h3></li>
+
+            <li><i class="fas fa-sort-down"></i></li>
+          </ul>
+        </div>
+        <div class="headerOption">
+          <p>
+            Try Premium <br />
+            for free
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Header Ends -->
+
+    <!-- Main Body Starts -->
+    <!-- Main Body Starts -->
+    <div class="body__main">
+      <!-- Sidebar Starts -->
+      <div class="sidebar">
+        <div class="sidebar__top">
+          <img src="img/Tanbir.jpg" />
+          <i class="material-icons sidebar__topAvatar"> account_circle </i>
+          <h2>Tanbir Hasan Mohan</h2>
+          <h4>Front End Developer</h4>
+        </div>
+
+        <div class="sidebar__stats">
+          <div class="sidebar__stat">
+            <p>Connections</p>
+            <p class="sidebar__statNumber">2,453</p>
+          </div>
+          <div class="sidebar__stat">
+            <p>Grow your network</p>
+          </div>
+        </div>
+        <div class="sidebar__middle">
+          <p>Access exclusive tools & insights</p>
+          <p>Try premium for free</p>
+        </div>
+
+        <div class="sidebar__myitems">
+          <span>icon</span>
+          <p>my-items</p>
+        </div>
+
+        <div class="sidebar__bottom">
+          <div class="sidebar__recentItem">
+            <a href="#">Group</a>
+          </div>
+          <div class="sidebar__recentItem">
+            <a href="#">Events</a>
+            <p>icon</p>
+          </div>
+          <div class="sidebar__recentItem">
+            <a href="#">Followed Hashtags</a>
+          </div>
+        </div>
+
+        <div class="sidebar__discovermore">
+          <p>Discover More</p>
+        </div>
+      </div>
+      <!-- Sidebar Ends -->
+
+      <!-- Feed Starts -->
+      <div class="feed">
+        <div class="feed__inputContainer">
+          <div class="feediputwithimg">
+            <img src="img/Tanbir.jpg" alt="" />
+            <div class="feed__input">
+              <form>
+                <input type="text" placeholder="Start a post" />
+                <button type="submit">Send</button>
+              </form>
+            </div>
+          </div>
+
+          <div class="feed__inputOptions">
+            <div class="inputOption">
+              <i class="fas fa-image"></i>
+               
+              </i>
+              <h4>Photo</h4>
+            </div>
+            <div class="inputOption">
+              <i class="fab fa-youtube"></i>
+             
+              </i>
+              <h4>Video</h4>
+            </div>
+            <div class="inputOption">
+              <i class="fas fa-calendar"></i>
+              <h4>Event</h4>
+            </div>
+            <div class="inputOption">
+              <i class="fas fa-newspaper"></i>
+             
+              </i>
+              <h4>Write Article</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="sortby">
+          <div class="line">
+           
+          </div>
+          
+          <div class="text">
+            <p>Sort by:</p>
+            <button>Top</button>
+            <i class="fas fa-sort-down"></i>
+          </div>
+        </div>
+
+        <!-- Post Starts -->
+        <div class="post">
+          <div class="post__header">
+            <div class="Post-like-history">
+              <img src="img/Tanbir.jpg" alt="">
+              <p>Abudullah as hossain <span>likes this</span></p>
+            </div>
+            <div class="post-like-button">
+              <button><i class="fas fa-ellipsis-h"></i></button>
+            </div>
+          </div>
+
+          <div class="post__body__top">
+            <img src="img/soulatkhan.jpg" alt="">
+            <div class="post-body-text">
+              <div class="post-body-text-header">
+                <p><strong>Sumaiya Chowdhury</strong></p>
+                <i class="fas fa-circle"></i>
+                <span>3rd+</span></p>
+              </div>
+           
+              <p>Senior Development Officer at bkash limited,Strategy and buissnes dev...</p>
+           
+              <div class="post-body-text-bottom">
+                <p>2h</p>
+                <i class="fas fa-circle"></i>
+                <p>Edited</p>
+                <i class="fas fa-globe-africa"></i>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="post__body__middle">
+            <p>Thanks <a href="#">bkash limited</a> for new year souvenir </p>
+            <img src="img/bkashgift.jpg" alt="">
+            <div class="liked-people">
+              <i class="fas fa-thumbs-up"></i>
+              <p>Abdullah Al hossain and 7 others</p>
+            </div>
+           
+          </div>
+
+          <div class="feed__inputOptions">
+            <div class="inputOption">
+              <i class="fas fa-thumbs-up"></i>
+              <h4>Like</h4>
+            </div>
+            <div class="inputOption">
+              <i class="far fa-comment-dots"></i>
+              <h4>Comment</h4>
+            </div>
+            <div class="inputOption">
+              <i class="fas fa-share"></i>
+              <h4>Share</h4>
+            </div>
+            <div class="inputOption">
+              <i class="fas fa-paper-plane"></i>
+              <h4>Send</h4>
+            </div>
+          </div>
+        </div>
+        <!-- Post Ends -->
+
+        <!-- Post Starts -->
+        <div class="post">
+          <div class="post__header">
+             <div class="img-text">
+               <img src="img/shulich.png" alt="">
+               <div class="text">
+                 <p>Schulich School of Buisness - York University</p>
+                 <p>Promoted</p>
+               </div>
+             </div>
+             <div class="post-like-button">
+              <button><i class="fas fa-ellipsis-h"></i></button>
+            </div>
+          </div>
+
+
+
+          <div class="post__body">
+            <p>Take your career to the next level with the tools credentials and contacts you will gain with a full-time or part-time MBA at Schulich. Complete this to learn if you qualify</p>
+            <img src="img/sch.jpg" alt="">
+            <a href="#">Learn More</a>
+          </div>
+
+
+
+          <div class="like-and-comments">
+              <div class="people-react">
+                <i class="fas fa-thumbs-up"></i>
+                <i class="far fa-heart"></i>
+                <i class="fas fa-sign-language"></i>
+                <p>1,197</p>
+              </div>
+              <div class="people-comment">
+                <p>10 comments .</p>
+                <p>1 share</p>
+              </div>
+          </div>
+
+
+
+          <div class="feed__inputOptions">
+            <div class="inputOption">
+              <i class="fas fa-thumbs-up"></i>
+              <h4>Like</h4>
+            </div>
+            <div class="inputOption">
+              <i class="far fa-comment-dots"></i>
+              <h4>Comment</h4>
+            </div>
+            <div class="inputOption">
+              <i class="fas fa-share"></i>
+              <h4>Share</h4>
+            </div>
+            <div class="inputOption">
+              <i class="fas fa-paper-plane"></i>
+              <h4>Send</h4>
+            </div>
+          </div>
+        </div>
+        <!-- Post Ends -->
+
+
+      <!--Post start  -->
+
+      <div class="post">
+        <div class="post__header">
+          <div class="Post-like-history">
+            <img src="img/Tanbir.jpg" alt="">
+            <p>Mohammad Zaman <span>likes this</span></p>
+          </div>
+          <div class="post-like-button">
+            <button><i class="fas fa-ellipsis-h"></i></button>
+          </div>
+        </div>
+
+        <div class="post__body__top">
+          <img src="img/soulatkhan.jpg" alt="">
+          <div class="post-body-text">
+            <div class="post-body-text-header">
+              <p><strong>Soulat Khan</strong></p>
+              <i class="fas fa-circle"></i>
+              <span>3rd+</span></p>
+            </div>
+         
+            <p>Americas solution architecture leader, AWS</p>
+         
+            <div class="post-body-text-bottom">
+              <p>1w</p>
+              <i class="fas fa-circle"></i>
+              <p>Edited</p>
+              <i class="fas fa-globe-africa"></i>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="post__body__middle">
+          <p>For the past few months I have the privilage to work with an AWS team some architects, technologists and sales specialists that are dedicated to helping our partners and customers run SAP on AWS. We have our first team offsite on houston, Texas where we finally met<p/> <button
+            class="seemorebtn"
+            id="dots"
+            onclick="seeMore()"
+          >
+            ...see more
+          </button><span id="more"> face to face and planned to continue saclling our partners and customers business in 2022 
+
+          I am excited to lead this team alongside <a href="">Christina Martin</a> and having so much fun at AWS. Join us we are actively hiring in USA and Latam</span>
+          <img src="img/aws.jpg" alt="">
+      
+        </div>
+
+
+        <div class="like-and-comments">
+          <div class="people-react">
+            <i class="fas fa-thumbs-up"></i>
+            <i class="far fa-heart"></i>
+            <i class="fas fa-sign-language"></i>
+            <p>1,197</p>
+          </div>
+          <div class="people-comment">
+            <p>10 comments .</p>
+            <p>1 share</p>
+          </div>
+      </div>
+
+        <div class="feed__inputOptions">
+          <div class="inputOption">
+            <i class="fas fa-thumbs-up"></i>
+            <h4>Like</h4>
+          </div>
+          <div class="inputOption">
+            <i class="far fa-comment-dots"></i>
+            <h4>Comment</h4>
+          </div>
+          <div class="inputOption">
+            <i class="fas fa-share"></i>
+            <h4>Share</h4>
+          </div>
+          <div class="inputOption">
+            <i class="fas fa-paper-plane"></i>
+            <h4>Send</h4>
+          </div>
+        </div>
+      </div>
+<!-- Post Ends -->
+       
+
+      <!-- post start jub -->
+
+
+      <div class="comment-item">
+        <div class="box-top">
+          <p>
+          
+            <a href="#">Hasanur Rahman</a
+            ><span> comment on this </span>
+          </p>
+          <div class="post-like-button">
+            <i class="fas fa-ellipsis-h"></i>
+          </div>
+        
+        </div>
+ 
+    
+
+        <div class="post-item">
+          <div class="box-profile">
+            <div class="img-name">
+              <div class="img-comment">
+                <div class="post-comment-image">
+                  <img src="img/subrataroy.jpg" />
+                </div>
+  
+                <div class="comment-name-details">
+                  <h3>Shuvobrata Roy</h3>
+                  <p>Professional Android Developer| Software Engineer</p>
+                  <span
+                    >1w .
+                    <i class="fas fa-globe-africa"></i></span>
+                </div>
+              </div>
+           
+              <a href="#"><i class="fas fa-plus"></i>Follow</a>
+            </div>
+            <!-- <div class="comment-follow">
+              <button>+ Follow</button>
+            </div> -->
+          </div>
+          <div class="post-content">
+            <div class="post-text-content">
+               <p>Google recently have updated their recommended architecture for android on their developer site.
+                Finally it's officially time to adapt to clean architecture for android development
+               </p>
+
+               <a href="#">https://lnkd.in/g7M98W6d</a>
+            </div>
+           
+          </div>
+        </div>
+
+        <div class="post-like-comment">
+          <div class="likes">
+            <a href="#">
+              <i class="far fa-thumbs-up"></i>
+              <span> 16</span>
+            </a>
+          </div>
+          <a href="#">
+            <p>15 comments</p>
+          </a>
+        </div>
+
+        <div class="feed__inputOptions">
+          <div class="inputOption">
+            <i class="fas fa-thumbs-up"></i>
+            <h4>Like</h4>
+          </div>
+          <div class="inputOption">
+            <i class="far fa-comment-dots"></i>
+            <h4>Comment</h4>
+          </div>
+          <div class="inputOption">
+            <i class="fas fa-share"></i>
+            <h4>Share</h4>
+          </div>
+          <div class="inputOption">
+            <i class="fas fa-paper-plane"></i>
+            <h4>Send</h4>
+          </div>
+        </div>
+
+        <div class="comment-input">
+          <img src="img/Tanbir.jpg" />
+          <form>
+            <input
+              type="text"
+              id="lname"
+              name="lname"
+              placeholder="Add a comment..."
+            />
+            <div class="comment-icon">
+              <i class="fas fa-image"></i>
+              <i class="far fa-smile"></i>
+            </div>
+          </form>
+        </div>
+
+        <div class="comments">
+          <h4>Most relevant<i class="fas fa-caret-down"></i></h4>
+          <div class="individual-comment">
+            <div class="comment-image">
+              <img src="img/Hasanur Rahman.jpg" />
+            </div>
+            <div class="comment-content">
+              <div class="full-comment">
+                <div class="comment-title">
+                  <h4>Hasanur Rahman<span> . 1st</span></h4>
+                  <span>1w <i class="fas fa-ellipsis-h"></i></span>
+                </div>
+                <span>CTO at Shadhin Lab LLC</span>
+                <div class="comment-desc">
+                 <a href="#">Nurul Islam Nayan</a>
+                </div>
+              </div>
+              <span
+                ><a class="comment-like" href="#">Like </a>
+             
+                <a href="#" class="comment-replay">Replay</a>
+              
+            </div>
+          </div>
+          <h4>
+            <a class="load-more" href="#">Load more comments</a>
+          </h4>
+        </div>
+      </div>
+
+
+      <!-- End -->
+
+     
+      </div>
+      <!-- Feed Ends -->
+
+      <!-- Widgets Starts -->
+      <div class="widgets">
+        <div class="right-full-container">
+          <div class="right-text-content">
+            <h3 class="item-title">Add to your feed</h3>
+
+            <div class="right-items">
+              <a href="#" class="items-link">
+                <div class="items-image">
+                  <img class="items-img" src="img/jobsannoucment.jpg" />
+                </div>
+                <div class="items-text">
+                  <h4>Job Announcment in Bangladesh</h4>
+                  <p>Company</p>
+                  <p>Human Resources</p>
+                </div>
+              </a>
+              <div class="follow-btn">
+                <div class="none"></div>
+                <div class="btn">
+                  <button class="right-item-btn">+ Follow</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="right-items">
+              <a href="#" class="items-link">
+                <div class="items-image">
+                  <img class="items-img" src="img/Adam.jpg" />
+                </div>
+                <div class="items-text">
+                  <h4>Adam Daniel</h4>
+                  <p>
+                   Tech & Innovation Leader
+                  </p>
+                  <p>2,236,754 followers</p>
+                </div>
+              </a>
+              <div class="follow-btn">
+                <div class="none"></div>
+                <div class="btn">
+                  <button class="right-item-btn">+ Follow</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="right-items">
+              <a href="#" class="items-link">
+                <div class="items-image">
+                  <img class="items-img" src="img/sumit.jpg" />
+                </div>
+                <div class="items-text">
+                  <h4>Sumit Shaha</h4>
+                  <p>Founder of Learn with Sumit</p>
+                  <p>Co-founder of Analyzn</p>
+                </div>
+              </a>
+              <div class="follow-btn">
+                <div class="none"></div>
+                <div class="btn">
+                  <button class="right-item-btn">+ Follow</button>
+                </div>
+              </div>
+            </div>
+            <a class="see-all-right" href="#"
+              >View all recommendations <i class="fas fa-arrow-right"></i></i
+            ></a>
+          </div>
+        </div>
+
+
+        <div class="dream">
+          <img src="img/dream.jpg" alt="">
+
+        </div>
+
+
+
+
+        <div class="footer-nav">
+          <div class="nav-link">
+            <a href="#">About</a>
+            <a href="#">Accesibility</a>
+            <a href="#">Help Center</a>
+            <div class="nav-drop">
+              <a href="#">Privacy & Terms</a>
+              <div class="privacy-drop-down" id="privacy-drop-down">
+                <a href="#">Privacy Policy</a>
+                <a href="#">User Agreement</a>
+                <a href="#">Cookie Policy</a>
+                <a href="#">Copyright Policy</a>
+              </div>
+              <i
+                onclick="privacyArrowDown()"
+                class="fas fa-angle-down"
+                id="privacy-down"
+              ></i>
+
+              <i
+                onclick="privacyArrowup()"
+                class="fas fa-angle-up"
+                id="privacy-up"
+              ></i>
+            </div>
+
+            <a href="#">Ad Choices</a>
+            <a href="#">Advertising</a>
+            <div class="nav-drop">
+              <a href="#">Business Services </a>
+
+              <i class="fas fa-angle-down"></i>
+              <!-- <i class="fas fa-angle-up"></i> -->
+            </div>
+
+            <a href="#">Get the Linkedln app</a>
+            <a href="#">More</a>
+          </div>
+          <div class="footer-title">
+            <p>
+              <i class="fab fa-linkedin"></i>Linkedin Corporation © 2022
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Widgets Ends -->
+    </div>
+    <!-- Main Body Ends -->
+
+
+
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
