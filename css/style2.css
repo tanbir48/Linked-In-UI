@@ -124,7 +124,6 @@ h3.item-title {
 }
 
 .right-text-content {
-  width: 100%;
   padding: 20px 10px;
 }
 
@@ -153,7 +152,7 @@ h3.item-title {
 .items-text {
   margin-left: 10px;
   flex-grow: 1;
-  flex-basis: 65%;
+  max-width: 100%;
 }
 
 .items-text > h4 {
@@ -161,7 +160,6 @@ h3.item-title {
   font-size: 14px;
   font-weight: 600;
 }
-
 .items-text > p {
   color: #5e5e5e;
   font-size: 12px;

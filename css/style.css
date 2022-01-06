@@ -194,6 +194,7 @@ body {
 .body__main {
   display: flex;
   margin-top: 35px;
+  flex-wrap: wrap;
   width: 80%;
   margin-left: 20px;
   margin-right: 20px;
@@ -274,7 +275,7 @@ body {
 .sidebar__middle {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
   border: 1px solid lightgray;
   border-top: 0;
   padding: 10px;
